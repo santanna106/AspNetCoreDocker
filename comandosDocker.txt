@@ -1,0 +1,16 @@
+--Criando uma imagem docker apartir de um Dockerfile
+docker build -t aspnetcoremvc/app1:1.0 .
+--Criando um container docker
+docker container create -p 3000:80 --name mvcprodutos aspnetcoremvc/app1:1.0
+--Iniciando um container docker
+docker container start mvcprodutos
+
+
+--Instalando pacotes para o banco
+
+dotnet add package Microsoft.EntityFrameworkCore -v 5.0.1
+dotnet add package Microsoft.EntityFrameworkCore.Tools -v 5.0.1
+dotnet add package Microsoft.EntityFrameworkCore.Design -v 5.0.1
+dotnet add package Pomelo.EntityFrameworkCore.MySql -v 5.0.1
+
+dotnet add package MySql.EntityFrameworkCore --version 5.0.0+m8.0.23
