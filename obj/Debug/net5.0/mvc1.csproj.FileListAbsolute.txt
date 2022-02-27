@@ -83,3 +83,12 @@ D:\Gabriel\Cursos\Docker\AspNetCoreDocker\obj\Debug\net5.0\ref\mvc1.dll
 D:\Gabriel\Cursos\Docker\AspNetCoreDocker\obj\Debug\net5.0\mvc1.pdb
 D:\Gabriel\Cursos\Docker\AspNetCoreDocker\obj\Debug\net5.0\mvc1.genruntimeconfig.cache
 D:\Gabriel\Cursos\Docker\AspNetCoreDocker\obj\Debug\net5.0\mvc1.csproj.CopyComplete
+D:\Gabriel\Cursos\Docker\AspNetCoreDocker\bin\Debug\net5.0\Humanizer.dll
+D:\Gabriel\Cursos\Docker\AspNetCoreDocker\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\Gabriel\Cursos\Docker\AspNetCoreDocker\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Gabriel\Cursos\Docker\AspNetCoreDocker\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Gabriel\Cursos\Docker\AspNetCoreDocker\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Gabriel\Cursos\Docker\AspNetCoreDocker\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Gabriel\Cursos\Docker\AspNetCoreDocker\bin\Debug\net5.0\MySqlConnector.dll
+D:\Gabriel\Cursos\Docker\AspNetCoreDocker\bin\Debug\net5.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\Gabriel\Cursos\Docker\AspNetCoreDocker\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll

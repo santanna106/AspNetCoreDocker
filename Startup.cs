@@ -8,6 +8,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore; 
+using AspNetCoreDocker.Models;
+
 using mvc1.Models;
 
 namespace mvc1
@@ -24,7 +27,14 @@ namespace mvc1
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<IRepository,TesteRepository>();
+            services.AddTransient<IRepository,ProdutoRepository>();
+
+            string mySqlConnectionStr = Configuration.GetConnectionString("DefaultConnection");  
+
+            services.AddDbContextPool<AppDbContext>(
+                options => options.UseMySql(mySqlConnectionStr, 
+                    ServerVersion.AutoDetect(mySqlConnectionStr)));  
+
             services.AddControllersWithViews();
         }
 

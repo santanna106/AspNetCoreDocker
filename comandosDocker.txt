@@ -1,3 +1,8 @@
+--compilando uma aplicação .net
+dotnet build
+--publicando uma aplicacao .net
+dotnet publish --configuration Release --output dist
+
 --Criando uma imagem docker apartir de um Dockerfile
 docker build -t aspnetcoremvc/app1:1.0 .
 --Criando um container docker
@@ -8,9 +13,18 @@ docker container start mvcprodutos
 
 --Instalando pacotes para o banco
 
-dotnet add package Microsoft.EntityFrameworkCore -v 5.0.1
-dotnet add package Microsoft.EntityFrameworkCore.Tools -v 5.0.1
-dotnet add package Microsoft.EntityFrameworkCore.Design -v 5.0.1
-dotnet add package Pomelo.EntityFrameworkCore.MySql -v 5.0.1
+dotnet add package Microsoft.EntityFrameworkCore -v 5.0.7
+dotnet add package Microsoft.EntityFrameworkCore.Tools -v 5.0.7
+dotnet add package Microsoft.EntityFrameworkCore.Design -v 5.0.7
+dotnet add package Pomelo.EntityFrameworkCore.MySql -v 5.0.4
 
-dotnet add package MySql.EntityFrameworkCore --version 5.0.0+m8.0.23
+-- baixar a imagem do MySql
+docker image pull mysql:8.0
+--Inspecionando a imagem
+docker image inspect mysql:8.0
+-- criando volume do MySql
+docker volume create --name produtosdata
+--Criando o container do banco
+docker container run -d --name mysql -v produtosdata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 -e bind-address=0.0.0.0 mysql:8.0
+
+
