@@ -1,5 +1,5 @@
 {
-  "FilePath": "f:\\Desenvolvimento\\Docker\\projetos\\mvc1\\mvc1.csproj",
+  "FilePath": "d:\\Gabriel\\Cursos\\Docker\\AspNetCoreDocker\\mvc1.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15619,38 +15619,38 @@
   "RootNamespace": "mvc1",
   "Documents": [
     {
-      "FilePath": "f:\\Desenvolvimento\\Docker\\projetos\\mvc1\\Views\\Shared\\Error.cshtml",
+      "FilePath": "d:\\Gabriel\\Cursos\\Docker\\AspNetCoreDocker\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "f:\\Desenvolvimento\\Docker\\projetos\\mvc1\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FilePath": "d:\\Gabriel\\Cursos\\Docker\\AspNetCoreDocker\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "f:\\Desenvolvimento\\Docker\\projetos\\mvc1\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "f:\\Desenvolvimento\\Docker\\projetos\\mvc1\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "f:\\Desenvolvimento\\Docker\\projetos\\mvc1\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "f:\\Desenvolvimento\\Docker\\projetos\\mvc1\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "d:\\Gabriel\\Cursos\\Docker\\AspNetCoreDocker\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "f:\\Desenvolvimento\\Docker\\projetos\\mvc1\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FilePath": "d:\\Gabriel\\Cursos\\Docker\\AspNetCoreDocker\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Gabriel\\Cursos\\Docker\\AspNetCoreDocker\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Gabriel\\Cursos\\Docker\\AspNetCoreDocker\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Gabriel\\Cursos\\Docker\\AspNetCoreDocker\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     }
   ],

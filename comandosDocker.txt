@@ -28,3 +28,24 @@ docker volume create --name produtosdata
 docker container run -d --name mysql -v produtosdata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 -e bind-address=0.0.0.0 mysql:8.0
 
 
+--Verificando a rede virtual da imagem docker
+docker network inspect bridge
+
+-- Iniciando um container docker mysql
+docker container start mysql
+
+--Criando o container mvc apontando para o banco
+docker container run -d --name appmvc -p 3000:80 -e DBHOST=172.17.0.2 produtosmvc/app:2.0
+
+--Examinando o log da aplicação
+docker container logs appmvc
+
+
+--Inicializar Mysql de Forma Interativa
+docker container exec -it mysql bash
+
+--Logar no banco MySql
+mysql -uroot -p
+
+--Inicializando container com a imagem da aplicação .net
+docker container run -d --name appmvc4 -p 3000:80 -e DBHOST=172.17.0.2 aspnetcoremvc/app1:3.0
