@@ -49,3 +49,26 @@ mysql -uroot -p
 
 --Inicializando container com a imagem da aplicação .net
 docker container run -d --name appmvc4 -p 3000:80 -e DBHOST=172.17.0.2 aspnetcoremvc/app1:3.0
+
+--processar o docker-compose
+docker-compose -f docker-compose.yml build
+
+--verificar syntaxe do documento docker-compose.yml
+docker-compose build
+
+-- Iniciar a aplicação com o docker-compose
+docker-compose up
+
+-- Remover os containers criados com docker compose
+docker=compose down
+
+-- Listar os containers iniciados
+docker-compose ps
+
+
+-- Verificar os logs
+docker-compose logs
+
+--Entrar no container em modo interativo
+
+docker container exec -it aspnetcoredocker_mysql_1 bash

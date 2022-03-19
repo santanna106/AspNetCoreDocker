@@ -1,0 +1,21 @@
+version: "3.9"
+
+volumes:
+    produtosdata:
+
+networks:
+    frontend:
+    backend:
+
+services:
+    mysql:
+      image: "mysql:8.0"
+      command: --init-file /data/application/init.sql
+      volumes: 
+        - produtosdata:/var/lib/mysql
+        - ./_MySQL_Init_Script/init.sql:/data/application/init.sql
+      networks:
+        - backend
+      environment:
+        - MYSQL_ROOT_PASSWORD=123456
+        - bind-address=0.0.0.0
