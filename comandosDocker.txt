@@ -72,3 +72,9 @@ docker-compose logs
 --Entrar no container em modo interativo
 
 docker container exec -it aspnetcoredocker_mysql_1 bash
+
+--Criand Imagem para deploy 
+docker-compose -f docker-compose-dev.yml -p dev build
+
+--Inicializado serviço do docker
+docker-compose -f docker-compose-dev.yml -p dev up mvc

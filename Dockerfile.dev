@@ -1,0 +1,11 @@
+FROM mcr.microsoft.com/dotnet/sdk:5.0 AS runtime
+RUN mkdir /app
+WORKDIR /app
+COPY mvc1.csproj .
+RUN dotnet restore
+COPY . .
+RUN dotnet publish -c Release -o dist
+ENV ASPNETCORE_URLS=http://+:80
+EXPOSE 80/tcp
+
+CMD ["dotnet","dist/mvc1.dll"]
