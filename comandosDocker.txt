@@ -78,3 +78,13 @@ docker-compose -f docker-compose-dev.yml -p dev build
 
 --Inicializado serviço do docker
 docker-compose -f docker-compose-dev.yml -p dev up mvc
+
+--Gerando imagem multistage
+
+docker build -f Dockerfile.multi -t multi_mvc .
+
+--Inicializando o serviço multi stage
+docker-compose -f docker-compose-multi.yml -p multi up mvc
+
+--Removendo Imagem Docker
+docker rmi test:latest
